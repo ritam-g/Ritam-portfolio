@@ -1,6 +1,5 @@
-import React from 'react'
 import Left from './Left'
-import Right from './Rightight'
+import Right from './Right'
 function Nav() {
   return (
     <div className='w-full  h-[2rem] w-full flex items-center justify-between text-white font-serif

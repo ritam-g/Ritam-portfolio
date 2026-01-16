@@ -1,6 +1,6 @@
-import React from 'react'
-import Nav from './navbar/Nav'
+
 import Section1 from './components/Section1'
+import Nav from './components/Nav'
 
 function App() {
   return (
