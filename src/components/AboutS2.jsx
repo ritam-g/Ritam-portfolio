@@ -3,7 +3,7 @@ import React from 'react'
 function AboutS2() {
   return (
     <div className='AboutS2 w-full h-full
-     flex gap-[8rem]
+     flex 
     lg: 
     '>
       <div
@@ -40,8 +40,11 @@ function AboutS2() {
   </div>
 </div>
 
-      <div className="right w-[25%] h-full  flex items-center  ">
-            <img className='h-[60%] w-full rounded-[50%] ' src="/ritam.jpg" alt="" />
+      <div className="right w-[25%] h-full  flex items-start  justify-end 
+      lg:pt-[5rem]  
+      
+      ">
+            <img className=' w-full rounded-[50%] ' src="/ritam.jpg" alt="" />
       </div>
     </div>
   )

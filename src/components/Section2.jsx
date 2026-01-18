@@ -4,7 +4,7 @@ import AboutS2 from './AboutS2'
 
 function Section2() {
   return (
-    <div className='Section2 h-[100vh] w-[100vw]  
+    <div className='Section2 w-[100vw]  
     lg:mt-[1rem]  p-[5rem] 
     '>
       <Section2Nav/>
