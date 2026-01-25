@@ -4,6 +4,9 @@ import Nav from './components/Nav'
 import Section2 from './components/Section2'
 import ScrollingSkills from './components/ScrollingSkills'
 
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+
 function App() {
   return (
     <>
@@ -11,13 +14,19 @@ function App() {
       overflow-x-hidden overflow-y-scroll
       '>
         {/* hero section */}
-      <Nav/>
-      <Section1/>
-      <hr />
-      {/* ABOUT SECTION */}
-      <Section2/>
-      {/* MOVING PART */}
-      <ScrollingSkills/>
+        <Nav />
+        <Section1 />
+        <hr className='border-gray-800' />
+        {/* ABOUT SECTION */}
+        <Section2 />
+        {/* MOVING PART */}
+        <ScrollingSkills />
+
+        {/* PROJECTS SECTION */}
+        <Projects />
+
+        {/* CONTACT SECTION */}
+        <Contact />
       </main>
     </>
   )
