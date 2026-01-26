@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import Section2 from './components/Section2'
 import ScrollingSkills from './components/ScrollingSkills'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         </div>
 
         {/* CONTACT SECTION */}
-        {/* <Contact /> */}
+        <Contact />
       </main>
 
     </>

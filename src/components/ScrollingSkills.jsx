@@ -41,6 +41,26 @@ function ScrollingSkills() {
         <span>☕ Java</span>
         <span>🐧 Linux</span>
         <span>📦 OOPs</span>
+        {/* duplicate for seamless loop */}
+        <span>🚀 MERN Stack</span>
+        <span>⚡ REST API</span>
+        <span>🎨 Tailwind CSS</span>
+        <span>⚛️ React</span>
+        <span>🧠 DSA</span>
+        <span>🐍 Python</span>
+        <span>☕ Java</span>
+        <span>🐧 Linux</span>
+        <span>📦 OOPs</span>
+        {/* duplicate for seamless loop */}
+        <span>🚀 MERN Stack</span>
+        <span>⚡ REST API</span>
+        <span>🎨 Tailwind CSS</span>
+        <span>⚛️ React</span>
+        <span>🧠 DSA</span>
+        <span>🐍 Python</span>
+        <span>☕ Java</span>
+        <span>🐧 Linux</span>
+        <span>📦 OOPs</span>
       </div>
     </section>
   );

@@ -77,7 +77,7 @@ function Section1() {
       </div>
 
       <div className="button mt-4">
-        <a href="mailto:ritam@example.com" className="cta-button inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold tracking-wide hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1">
+        <a href="mailto:ritammaty@gmail.com" className="cta-button inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold tracking-wide hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1">
           Let's Connect
         </a>
       </div>
