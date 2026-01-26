@@ -52,7 +52,7 @@ function Section1() {
       "
     >
       <div className="details w-full flex flex-col items-center z-10">
-        <div className="child text-[4rem] md:text-[6rem] leading-none text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow-lg">
+        <div className="child text-[4rem] md:text-[6rem] leading-none text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-600drop-shadow-lg">
           Ritam Maty
         </div>
 
