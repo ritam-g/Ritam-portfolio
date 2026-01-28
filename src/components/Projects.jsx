@@ -73,10 +73,12 @@ const projects = [
 function Projects() {
     const sectionRef = useRef(null)
     const scrollContainerRef = useRef(null)
-
+    const leftMP = useRef(null)
+    const rightlr = useRef(null)
+    const box = useRef(null)
     useGSAP(() => {
         const scrollContainer = scrollContainerRef.current
-
+        const leftMenuPanel = leftMP.current
         // Horizontal scroll animation
         gsap.to(scrollContainer, {
             x: () => -(scrollContainer.scrollWidth - window.innerWidth + 100),
@@ -90,7 +92,34 @@ function Projects() {
                 invalidateOnRefresh: true,
             }
         })
-    }, { scope: sectionRef })
+        gsap.from(leftMenuPanel, {
+            x: -100,
+            opacity: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 20%",
+                end: "top 0%",
+                scrub: true,
+                // markers:true
+            }
+        })
+        gsap.from(box.current,{
+            opacity:0,
+            y:50,
+            duration:1,
+            ease:"power2.out",
+            scrollTrigger:{
+                trigger: box.current,
+                start:"top 80%",    
+                end:"top 60%",
+                scrub:true,
+                // markers:true
+            }
+        })
+    }, [])
+    
 
     const scrollPrev = () => {
         window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' })
@@ -104,7 +133,7 @@ function Projects() {
         <section ref={sectionRef} className="relative h-screen w-full bg-[#0f0f0f] overflow-hidden flex flex-col justify-center">
             {/* Header */}
             <div className=" flex  justify-around w-full px-10 md:px-20 z-10 flex justify-between items-end">
-                <div>
+                <div ref={leftMP} >
                     <h2 className="text-6xl md:text-8xl font-serif text-white mb-2 tracking-tighter">
                         My Works
                     </h2>
@@ -112,7 +141,8 @@ function Projects() {
                         Witness the fusion of design and code through these selected projects, crafted with precision and passion.
                     </p>
                 </div>
-                <div className="hidden md:flex gap-4 text-white text-2xl z-20">
+                <div
+                ref={rightlr} className="hidden md:flex gap-4 text-white text-2xl z-20">
                     <button onClick={scrollPrev} className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all cursor-pointer hover:scale-110 active:scale-95">
                         <FaArrowLeft className="opacity-80" />
                     </button>
@@ -126,6 +156,7 @@ function Projects() {
             <div ref={scrollContainerRef} className="flex gap-10 px-10 md:px-20 items-center w-max mt-20 h-[60vh]">
                 {projects.map((project, index) => (
                     <div
+                        ref={box}
                         key={index}
                         onClick={() => window.open(project.demo, "_blank")}
                         className="box relative group w-[350px] md:w-[450px] h-full flex-shrink-0 rounded-[30px] overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-[1.02]"
