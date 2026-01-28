@@ -4,7 +4,7 @@ import { SiVite, SiSass, SiThreedotjs, SiGreensock, SiTailwindcss } from 'react-
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
+import './projects.css'
 gsap.registerPlugin(ScrollTrigger)
 
 const techIcons = {
@@ -46,7 +46,8 @@ const projects = [
         tags: ["JavaScript", "CSS Grid", "HTML"],
         github: "https://github.com/ritam-g/snake-game",
         demo: "https://snake-game-8nzq.vercel.app/",
-        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop"
+        image: "./snake.png"
+        
     },
     {
         title: "web-image-editor",
@@ -55,7 +56,7 @@ const projects = [
         tags: ["JavaScript", "CSS Grid", "HTML"],
         github: "https://github.com/ritam-g/web-image-editor",
         demo: "https://web-image-editor.vercel.app/",
-        image: "./snake.png"
+        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop"
     }
     ,
     {
@@ -102,7 +103,7 @@ function Projects() {
     return (
         <section ref={sectionRef} className="relative h-screen w-full bg-[#0f0f0f] overflow-hidden flex flex-col justify-center">
             {/* Header */}
-            <div className=" flex items-center justify-center w-full px-10 md:px-20 z-10 flex justify-between items-end">
+            <div className=" flex  justify-around w-full px-10 md:px-20 z-10 flex justify-between items-end">
                 <div>
                     <h2 className="text-6xl md:text-8xl font-serif text-white mb-2 tracking-tighter">
                         My Works
@@ -127,7 +128,7 @@ function Projects() {
                     <div
                         key={index}
                         onClick={() => window.open(project.demo, "_blank")}
-                        className="relative group w-[350px] md:w-[450px] h-full flex-shrink-0 rounded-[30px] overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-[1.02]"
+                        className="box relative group w-[350px] md:w-[450px] h-full flex-shrink-0 rounded-[30px] overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-[1.02]"
                     >
                         {/* Background Image */}
                         <img
