@@ -25,3 +25,12 @@ dist-ssr
 
 # Environment variables
 .env
+
+#skill
+.gemini
+.cursor
+.claude
+.agent
+.windsurf
+.agents
+.agents
