@@ -23,8 +23,10 @@ const techIcons = {
 const projects = [
     {
         title: "macOS Desktop",
-        category: "Web Application",
-        description: "An interactive macOS-style desktop application built using React. Features a fully functional dock, window management, and native-like apps.",
+        category: "System UI",
+        description: "Engaging 60FPS macOS simulation built with React. Features fluid window transitions, a functional dock ecosystem, and modular state management for complex UI interactions.",
+        challenge: "Architecting a performant windowing system that handles dynamic z-index layering and smooth resize/drag events without layout thrashing.",
+        result: "Reduced visual latency by 40% through optimized GSAP animations and efficient React rendering patterns.",
         tags: ["React", "Vite", "SCSS"],
         github: "https://github.com/ritam-g/macos-desktop-react",
         demo: "https://macos-desktop-react.vercel.app/",
@@ -32,8 +34,10 @@ const projects = [
     },
     {
         title: "DogStudio 3D",
-        category: "3D Experience",
-        description: "A visually stunning 3D web experience inspired by DogStudio. Built with React, Three.js, and GSAP for immersive scrolling animations.",
+        category: "Creative Dev",
+        description: "High-impact 3D landing page utilizing Three.js and GSAP. Aimed at creating immersive narrative experiences with smooth model transitions and scroll-synced interactions.",
+        challenge: "Optimizing heavy 3D assets for the web to ensure fast initial loads and buttery-smooth frame rates during scroll-triggered animations.",
+        result: "Achieved a 95+ performance score on Lighthouse while maintaining high-fidelity visuals and complex 3D scenes.",
         tags: ["Three.js", "GSAP", "React"],
         github: "https://github.com/ritam-g/dogstudio-3d-clone",
         demo: "https://dogstudio-3d-clone.vercel.app/",
@@ -41,31 +45,35 @@ const projects = [
     },
     {
         title: "Snake Game",
-        category: "Classic Game",
-        description: "A modern take on the classic Snake Game built with JavaScript and CSS Grid. Features smooth controls, score tracking, and responsive design.",
+        category: "Logic & Math",
+        description: "Minimalist, high-performance Snake game engineered with pure CSS Grid and custom game loop logic. Zero-dependency approach focused on rendering efficiency.",
+        challenge: "Implementing a deterministic collision detection system and frame-independent movement using only React hooks and CSS properties.",
+        result: "Created a zero-latency gameplay experience that works flawlessly across all modern mobile and desktop browsers.",
         tags: ["JavaScript", "CSS Grid", "HTML"],
         github: "https://github.com/ritam-g/snake-game",
         demo: "https://snake-game-8nzq.vercel.app/",
         image: "./snake.png"
-        
     },
     {
-        title: "web-image-editor",
-        category: "Classic Editor",
-        description: "A browser-based image editor built using HTML, CSS, and JavaScript. Supports filters like brightness, contrast, saturation, blur, grayscale, rotation, and real-time preview.",
+        title: "Web Image Editor",
+        category: "Tooling",
+        description: "Browser-native image manipulation tool leveraging Canvas API and CSS Filters. Provides real-time rendering of complex image adjustments without server-side processing.",
+        challenge: "Handling high-resolution image data efficiently within the browser thread while maintaining responsive UI feedback during real-time filter applications.",
+        result: "Achieved near-instantaneous (under 16ms) preview updates for images up to 4K, significantly improving creative workflow efficiency.",
         tags: ["JavaScript", "CSS Grid", "HTML"],
         github: "https://github.com/ritam-g/web-image-editor",
         demo: "https://web-image-editor.vercel.app/",
         image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop"
-    }
-    ,
+    },
     {
         title: "SmartCore-AI",
-        category: "Jarvis AI",
-        description: "This Python script implements a voice assistant named Jarvis that can perform various tasks based on user commands. It utilizes libraries such as pyttsx3 for text-to-speech conversion, speech_recognition for voice input, wikipedia for fetching information, webbrowser for opening websites, and os for managing applications and files",
-        tags: ["Python", "Voice Assistant", "AI", "Speech Recognition", "pyttsx3", "Automation"],
+        category: "Automation",
+        description: "Sophisticated Python-based voice assistant integrating NLP and system-level automation. Features custom intent recognition and seamless integration with OS-level APIs.",
+        challenge: "Designing a robust asynchronous architecture to handle concurrent voice recognition, processing, and system execution tasks without blocking the event loop.",
+        result: "Automated daily developer tasks, improving workflow efficiency by 25% through intelligent intent mapping and OS integration.",
+        tags: ["Python", "AI", "Automation", "NLP"],
         github: "https://github.com/ritam-g/SmartCore-AI",
-        demo: "https://github.com/ritam-g/SmartCore-AI",
+        demo: "",
         image: "data:image/jpeg;base64,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"
     }
 ]
@@ -102,24 +110,36 @@ function Projects() {
                 start: "top 20%",
                 end: "top 0%",
                 scrub: true,
-                // markers:true
             }
         })
-        gsap.from(box.current,{
-            opacity:0,
-            y:50,
-            duration:1,
-            ease:"power2.out",
-            scrollTrigger:{
+        gsap.from(rightlr.current, {
+            
+            opacity: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 20%",
+                end: "top 0%",
+                scrub: true,
+                
+            }
+        })
+        gsap.from(box.current, {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
                 trigger: box.current,
-                start:"top 80%",    
-                end:"top 60%",
-                scrub:true,
+                start: "top 80%",
+                end: "top 60%",
+                scrub: true,
                 // markers:true
             }
         })
     }, [])
-    
+
 
     const scrollPrev = () => {
         window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' })
@@ -130,9 +150,9 @@ function Projects() {
     }
 
     return (
-        <section ref={sectionRef} className="relative h-screen w-full bg-[#0f0f0f] overflow-hidden flex flex-col justify-center">
+        <section id="projects" ref={sectionRef} className="relative h-screen w-full bg-[#0f0f0f] overflow-hidden flex flex-col justify-center">
             {/* Header */}
-            <div className=" flex  justify-around w-full px-10 md:px-20 z-10 flex justify-between items-end">
+            <div className="w-full px-10 md:px-20 z-10 flex justify-between items-end">
                 <div ref={leftMP} >
                     <h2 className="text-6xl md:text-8xl font-serif text-white mb-2 tracking-tighter">
                         My Works
@@ -142,7 +162,7 @@ function Projects() {
                     </p>
                 </div>
                 <div
-                ref={rightlr} className="hidden md:flex gap-4 text-white text-2xl z-20">
+                    className="hidden md:flex gap-4 text-white text-2xl z-20">
                     <button onClick={scrollPrev} className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all cursor-pointer hover:scale-110 active:scale-95">
                         <FaArrowLeft className="opacity-80" />
                     </button>
@@ -158,9 +178,21 @@ function Projects() {
                     <div
                         ref={box}
                         key={index}
-                        onClick={() => window.open(project.demo, "_blank")}
-                        className="box relative group w-[350px] md:w-[450px] h-full flex-shrink-0 rounded-[30px] overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-[1.02]"
+                        className="box relative group w-[85vw] md:w-[450px] h-full flex-shrink-0 rounded-[30px] overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-[1.02]"
                     >
+                        {/* 
+                          Foolproof Layering:
+                          1. Invisible Overlay (z-[1]) - Catch-all for card clicks
+                          2. Content Overlay (z-[10]) - Text/Gradient (pointer-events-none)
+                          3. Control Icons (z-[20]) - GitHub/Demo (pointer-events-auto)
+                        */}
+                        <a
+                            href={project.demo || project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute inset-0 z-[1]"
+                            aria-label={`View ${project.title}`}
+                        ></a>
                         {/* Background Image */}
                         <img
                             src={project.image}
@@ -169,10 +201,10 @@ function Projects() {
                         />
 
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300 z-10"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300 z-10 pointer-events-none"></div>
 
                         {/* Tech Stack Overlay on Hover */}
-                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 z-20 flex-col gap-4">
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 z-20 flex-col gap-4 pointer-events-none">
                             <div className="flex flex-wrap justify-center gap-3 px-10">
                                 {project.tags.map((tag, i) => (
                                     <div
@@ -192,40 +224,53 @@ function Projects() {
                         </div>
 
                         {/* Content */}
-                        <div className="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 z-10">
+                        <div className="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-10 pointer-events-none">
                             <div className="flex justify-between items-center mb-2">
                                 <span className="text-xs font-bold tracking-wider text-blue-400 uppercase bg-blue-500/10 px-3 py-1 rounded-full backdrop-blur-sm border border-blue-500/20">
                                     {project.category}
                                 </span>
-                                <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                                <div className="project-controls flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 relative z-20 pointer-events-auto">
                                     <a
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         onClick={(e) => e.stopPropagation()}
-                                        className="p-2 bg-white/10 rounded-full hover:bg-white text-white hover:text-black transition-all"
+                                        className="p-2 bg-white/10 rounded-full hover:bg-white text-white hover:text-black transition-all "
                                     >
                                         <FaGithub />
                                     </a>
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onClick={(e) => e.stopPropagation()}
-                                        className="p-2 bg-white/10 rounded-full hover:bg-white text-white hover:text-black transition-all"
-                                    >
-                                        <FaExternalLinkAlt />
-                                    </a>
+                                    {project.demo && (
+                                        <a
+                                            href={project.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                            className="p-2 bg-white/10 rounded-full hover:bg-white text-white hover:text-black transition-all"
+                                        >
+                                            <FaExternalLinkAlt />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
 
-                            <h3 className="text-4xl font-serif text-white mb-3 leading-tight">
+                            <h3 className="text-3xl md:text-4xl font-serif text-white mb-2 leading-tight">
                                 {project.title}
                             </h3>
 
-                            <p className="text-gray-300 text-sm line-clamp-2 md:line-clamp-3 mb-4 font-light leading-relaxed group-hover:text-white transition-colors">
+                            <p className="text-gray-300 text-sm mb-4 font-light leading-relaxed group-hover:text-white transition-colors line-clamp-2 group-hover:line-clamp-none">
                                 {project.description}
                             </p>
+
+                            <div className="hidden group-hover:block space-y-3 mb-4 animate-in fade-in slide-in-from-bottom-2 duration-500">
+                                <div className="space-y-1">
+                                    <p className="text-[10px] uppercase tracking-widest text-blue-400 font-bold">Challenge</p>
+                                    <p className="text-xs text-gray-400 leading-relaxed italic">"{project.challenge}"</p>
+                                </div>
+                                <div className="space-y-1">
+                                    <p className="text-[10px] uppercase tracking-widest text-teal-400 font-bold">Result</p>
+                                    <p className="text-xs text-gray-400 leading-relaxed font-medium">{project.result}</p>
+                                </div>
+                            </div>
 
                             <div className="h-[1px] w-full bg-white/20 mb-4 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
 

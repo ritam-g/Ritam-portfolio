@@ -5,10 +5,10 @@ import AboutS2 from './AboutS2'
 function Section2() {
   return (
     <div className='Section2 w-[100vw]  
-    lg:mt-[1rem]  p-[5rem] 
+    lg:mt-[1rem] p-8 md:p-20
     '>
-      <Section2Nav/>
-      <AboutS2/>
+      <Section2Nav />
+      <AboutS2 />
     </div>
   )
 }

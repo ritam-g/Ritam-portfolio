@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import { CiDesktopMouse1 } from "react-icons/ci"
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 
@@ -19,13 +18,6 @@ function Section1() {
       stagger: 0.2,
       ease: "power3.out"
     })
-      .from(".social-icon", {
-        y: 20,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "back.out(1.7)"
-      }, "-=0.5")
       .from(".cta-button", {
         scale: 0,
         opacity: 0,
@@ -57,40 +49,47 @@ function Section1() {
         </div>
 
         <div className="child text-[1.5rem] md:text-[2rem] leading-tight mt-4 text-gray-300 font-light tracking-wide text-center px-4">
-          <span className="text-white font-semibold">MERN Stack Developer</span>
-          <span className="mx-3 text-purple-500">•</span>
-          <span>Problem Solver</span>
+          <span className="text-white font-semibold">Crafting High-Performance Web Experiences</span>
+          <br className="md:hidden" />
+          <span className="mx-3 text-purple-500 hidden md:inline">•</span>
+          <span className="block md:inline">MERN Stack Specialist</span>
+        </div>
+        <div className="child text-[1rem] md:text-[1.2rem] text-gray-400 mt-2 font-light text-center px-4 max-w-2xl">
+          Turning complex problems into elegant, performant digital solutions.
+          Expertise in <span className="text-blue-400">scalability</span> and <span className="text-teal-400">immersive design</span>.
         </div>
 
-        {/* Social Links */}
-        <div className="flex gap-6 mt-8">
-          <a href="https://www.linkedin.com/in/ritammaty/" target="_blank" rel="noopener noreferrer" className="social-icon text-3xl text-gray-400 hover:text-blue-500 transition-colors duration-300 transform hover:scale-110">
-            <FaLinkedin />
+      </div>
+
+      <div className="flex flex-col md:flex-row gap-6 mt-4 z-10">
+        <div className="cta-button">
+          <a
+            href="#projects"
+            className="
+              inline-block px-8 py-3
+              bg-white text-black rounded-full font-semibold tracking-wide
+              hover:bg-gray-200 transition-all duration-300
+              transform hover:scale-105 cursor-pointer
+            "
+          >
+            View Work
           </a>
-          <a href="https://github.com/ritam-g" target="_blank" rel="noopener noreferrer" className="social-icon text-3xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
-            <FaGithub />
-          </a>
-          <a href="https://x.com/maty_ritam" target="_blank" rel="noopener noreferrer" className="social-icon text-3xl text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
-            <FaTwitter />
+        </div>
+
+        <div className="cta-button">
+          <a
+            href="mailto:ritammaty@gmail.com"
+            className="
+              inline-block px-8 py-3
+              border border-white/20 text-white rounded-full font-semibold tracking-wide
+              hover:bg-white/10 transition-all duration-300
+              transform hover:scale-105 cursor-pointer
+            "
+          >
+            Let's Connect
           </a>
         </div>
       </div>
-
-      <div className="button z-10 cta-button">
-  <a
-    href="mailto:ritammaty@gmail.com"
-    className="
-       inline-block px-8 py-3
-      bg-gradient-to-r from-blue-600 to-purple-600
-      text-white rounded-full font-semibold tracking-wide
-      hover:shadow-lg hover:shadow-purple-500/30
-      transition-all duration-300
-      transform hover:scale-105 cursor-pointer
-    "
-  >
-    Let's Connect
-  </a>
-</div>
 
 
       <div

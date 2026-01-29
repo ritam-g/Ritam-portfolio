@@ -210,9 +210,10 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* Right Side: Form Card */}
                     <div className="lg:w-[55%] w-full h-full relative">
-                        <div className="form-card w-full bg-white/[0.03] backdrop-blur-xl border border-white/10 p-10 md:p-16 rounded-[50px] shadow-2xl relative overflow-hidden">
+                        <div className="form-card w-full bg-white/[0.04] backdrop-blur-2xl border border-white/10 p-10 md:p-16 rounded-[40px] md:rounded-[60px] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] relative overflow-hidden group/form hover:border-blue-500/20 transition-all duration-700">
+                            {/* Decorative inner glow */}
+                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none group-hover/form:bg-blue-500/10 transition-colors duration-700"></div>
                             {isSubmitted ? (
                                 <div className="flex flex-col items-center justify-center py-20 text-center space-y-6">
                                     <div className="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center">
