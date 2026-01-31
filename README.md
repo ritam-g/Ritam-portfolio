@@ -1,12 +1,78 @@
-# React + Vite
+# Modern Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic and interactive portfolio built with **React 19**, **Vite**, and **Tailwind CSS 4**. This project features smooth animations powered by **GSAP** and provides a professional showcase of skills and projects.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Fully responsive layout that works on all devices.
+- **Interactive Animations**: Smooth transitions and scroll-triggered animations using GSAP and `@gsap/react`.
+- **Modern Styling**: Styled with Tailwind CSS 4 for a sleek, modern look.
+- **Project Showcase**: A dedicated section to display key projects with detailed information.
+- **Contact Form**: Integrated contact form using EmailJS for direct communication.
+- **Skill Highlights**: Interactive scrolling skills section.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: [React 19](https://react.dev/), [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)
+- **Routing**: [React Router DOM](https://reactrouter.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Email Service**: [EmailJS](https://www.emailjs.com/)
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/             # Static assets like images
+├── components/         # Reusable React components
+│   ├── AboutS2.jsx     # About section implementation
+│   ├── Contact.jsx     # Contact form section
+│   ├── Nav.jsx         # Navigation bar
+│   ├── Projects.jsx    # Projects display section
+│   └── ...             # Other UI components
+├── App.jsx             # Main application component
+├── main.jsx            # Entry point
+└── index.css           # Global styles and Tailwind imports
+```
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js (latest LTS recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd protfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+To start the development server:
+```bash
+npm run dev
+```
+The application will be available at `http://localhost:5173`.
+
+## 🏗️ Building for Production
+
+To create a production build:
+```bash
+npm run build
+```
+The output will be in the `dist` directory.
+
+---
+Created with ❤️ by Swarup
