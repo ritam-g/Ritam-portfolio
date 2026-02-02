@@ -149,7 +149,7 @@ const Contact = () => {
                     {/* Left Content */}
                     <div className="lg:w-[45%] space-y-12">
                         <div className="space-y-4">
-                            <h2 className="contact-header text-7xl md:text-9xl font-serif leading-[0.8] tracking-tighter">
+                            <h2 className="contact-header text-7xl md:text-9xl font-heading leading-[0.8] tracking-tighter">
                                 Get In <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Touch</span>
                             </h2>
@@ -219,7 +219,7 @@ const Contact = () => {
                                     <div className="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center">
                                         <FaCheckCircle className="text-5xl text-green-500 animate-bounce" />
                                     </div>
-                                    <h3 className="text-4xl font-serif">Message Sent!</h3>
+                                    <h3 className="text-4xl font-heading">Message Sent!</h3>
                                     <p className="text-gray-400 max-w-xs">Thanks for reaching out. I'll get back to you as soon as possible.</p>
                                     <button
                                         onClick={() => setIsSubmitted(false)}
@@ -291,7 +291,7 @@ const Contact = () => {
 
             {/* Side Label */}
             <div className="hidden xl:block absolute left-10 bottom-32 -rotate-90 origin-left">
-                <p className="text-white/10 text-6xl font-serif font-black tracking-tighter uppercase select-none pointer-events-none">
+                <p className="text-white/10 text-6xl font-heading font-black tracking-tighter uppercase select-none pointer-events-none">
                     Connection
                 </p>
             </div>

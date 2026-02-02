@@ -52,7 +52,7 @@ function Nav() {
   }
 
   return (
-    <nav ref={navRef} className='fixed top-0 left-0 w-full z-[100] backdrop-blur-md bg-black/40 border-b border-white/10 flex items-center justify-between text-white font-serif px-6 py-4 md:px-12 transition-all duration-300'>
+    <nav ref={navRef} className='fixed top-0 left-0 w-full z-[100] backdrop-blur-md bg-black/40 border-b border-white/10 flex items-center justify-between text-white font-heading px-6 py-4 md:px-12 transition-all duration-300'>
       <Left />
 
       <div className="hidden md:flex items-center gap-8 bg-white/5 px-6 py-2 rounded-full border border-white/10 backdrop-blur-lg">

@@ -113,7 +113,7 @@ function Projects() {
             }
         })
         gsap.from(rightlr.current, {
-            
+
             opacity: 0,
             duration: 1,
             ease: "power2.out",
@@ -122,7 +122,7 @@ function Projects() {
                 start: "top 20%",
                 end: "top 0%",
                 scrub: true,
-                
+
             }
         })
         gsap.from(box.current, {
@@ -154,7 +154,7 @@ function Projects() {
             {/* Header */}
             <div className="w-full px-10 md:px-20 z-10 flex justify-between items-end">
                 <div ref={leftMP} >
-                    <h2 className="text-6xl md:text-8xl font-serif text-white mb-2 tracking-tighter">
+                    <h2 className="text-6xl md:text-8xl font-heading text-white mb-2 tracking-tighter">
                         My Works
                     </h2>
                     <p className="text-gray-400 max-w-sm text-sm md:text-base font-light">
@@ -253,7 +253,7 @@ function Projects() {
                                 </div>
                             </div>
 
-                            <h3 className="text-3xl md:text-4xl font-serif text-white mb-2 leading-tight">
+                            <h3 className="text-3xl md:text-4xl font-heading text-white mb-2 leading-tight">
                                 {project.title}
                             </h3>
 
@@ -287,7 +287,7 @@ function Projects() {
             </div>
 
             {/* Decoration */}
-            <div className="absolute bottom-10 right-10 md:right-20 text-white/5 text-[10rem] font-serif font-bold pointer-events-none select-none z-0">
+            <div className="absolute bottom-10 right-10 md:right-20 text-white/5 text-[10rem] font-heading font-bold pointer-events-none select-none z-0">
                 0{projects.length}
             </div>
         </section>

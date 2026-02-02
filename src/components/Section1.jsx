@@ -63,7 +63,7 @@ function Section1() {
       ref={containerRef}
       className="
         parent w-full flex flex-col items-center
-        pt-[8rem] font-serif font-bold gap-[3rem]
+        pt-[8rem] font-heading font-bold gap-[3rem]
         bg-gradient-to-b from-gray-900 to-gray-800
       "
     >
